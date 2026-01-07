@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Tentang | Smekda</title>
+    
+</head>
+<body class="bg-gray-50 pb-24 md:pb-0 font-sans">
+
+    <nav class="hidden md:flex items-center justify-between px-10 py-3 bg-[#1e5bff] text-white shadow-lg sticky top-0 z-50">
+        <div class="flex items-center">
+            <img src="logo-smekda.png" alt="Logo" class="h-14 w-auto object-contain">
+        </div>
+
+        <div class="flex gap-10 items-center font-semibold text-sm tracking-wide">
+            <a href="index.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Beranda</a>
+            <a href="about.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tentang</a>
+            
+            <div class="relative py-1 group">
+                <button id="btn-akademik" class="desktop-link flex items-center gap-1 hover:text-blue-100 transition">
+                    Akademik <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                </button>
+                <div id="menu-akademik" class="hidden group-hover:block absolute top-full left-0 mt-4 w-48 bg-white text-gray-800 rounded-md shadow-xl border border-gray-100 z-[60] overflow-hidden">
+                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition border-b border-gray-50">Kurikulum</a>
+                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition">Kesiswaan</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Kontak</a>
+        </div>
+
+        <a href="#" class="flex items-center gap-2 border-[1.5px] border-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-[#1e5bff] transition-all duration-300">
+            <i class="fa-solid fa-table-columns"></i> Dashboard
+        </a>
+    </nav>
+
+    <section id="Tentang" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Tentang Kami</h1>
+            <p class="text-[#1e5bff] font-bold uppercase tracking-widest text-sm italic">"Smekda Ceria" (Cerdas, Inovatif, Antusias)</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div class="order-2 md:order-1">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-[#1e5bff] pl-4">Sejarah Singkat</h2>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">
+                    SMK Negeri 2 Purwakarta merupakan aset penting dalam peningkatan SDM di Jawa Barat. Kami berkomitmen menyediakan fasilitas yang sesuai dengan kebutuhan industri global agar lulusan kami siap bersaing di pasar bebas.
+                </p>
+                <div class="h-1 w-20 bg-[#1e5bff] rounded-full"></div>
+            </div>
+            <div class="order-1 md:order-2 group">
+                <img src="foto-sekolah.jpg" alt="Gedung Sekolah" class="rounded-2xl shadow-xl w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-[#1e5bff] text-white p-8 rounded-3xl shadow-xl transform transition-transform hover:scale-[1.02]">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-white/20 p-3 rounded-2xl"><i class="fa-solid fa-eye text-2xl"></i></div>
+                    <h3 class="text-2xl font-bold">Visi Kami</h3>
+                </div>
+                <p class="text-lg leading-relaxed opacity-90 italic">"Menghasilkan Tamatan yang Berkarakter, Kompeten dan Berprestasi di Tingkat Nasional."</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-md border-t-8 border-[#1e5bff]">
+                <div class="flex items-center gap-4 mb-6 text-gray-800">
+                    <div class="bg-blue-50 p-3 rounded-2xl"><i class="fa-solid fa-list-check text-2xl text-[#1e5bff]"></i></div>
+                    <h3 class="text-2xl font-bold">Misi Kami</h3>
+                </div>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Mendidik, membina dan memberdayakan Murid agar menjadi manusia Indonesia yang berakhlak mulia, berbudaya, mandiri, dan berdaya saing;</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Menyelenggarakan program pendidikan yang berkualitas dan dinamis sesuai dengan perkembangan ilmu pengetahuan, teknologi dan  seni untuk meningkatkan kompetensi Murid;</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Menggali dan mengembangkan potensi akademik dan non akademik Murid;</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Mengembangkan dan meningkatkan Kompetensi serta Profesionalisme Tenaga Pendidikdan Tenaga Kependidikan yang disiplin, kreatif, inovatif dan kolaboratif;</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Menyediakan dan mengembangkan sarana-prasarana yang representatif dan handal untuk mendukung pembelajaran yang kreatif, produktif dan inovatif</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Menciptakan suasana ”Sekolah Rumah Kedua”, ”Sekolah Ramah Anak” dan ”Anti Kekerasan” yang religius, kondusif, nyaman,dan berbudaya lingkungan;</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Mewujudkan SMK Negeri 2 Purwakarta sebagai Pusat Layanan Belajar dan Pemberdayaan bagi masyarakat Purwakarta,Jawa Barat dan sekitarnya;</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <nav id="mobile-nav" class="md:hidden fixed bottom-0 left-0 right-0 bg-[#1e5bff] text-white shadow-[0_-5px_20px_rgba(0,0,0,0.1)] z-50 transition-transform duration-300">
+        <div class="flex justify-around items-center py-3">
+            <a href="index.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-house text-lg"></i>
+                <span class="text-[10px] font-medium">BERANDA</span>
+            </a>
+            <a href="about.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-circle-info text-lg"></i>
+                <span class="text-[10px] font-medium">TENTANG</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-book-open text-lg"></i>
+                <span class="text-[10px] font-medium">AKADEMIK</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-phone text-lg"></i>
+                <span class="text-[10px] font-medium">KONTAK</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

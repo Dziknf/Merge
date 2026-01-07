@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Beranda | Smekda</title>
+</head>
+<body class="bg-gray-50 pb-24 md:pb-0 font-sans">
+
+    <nav class="hidden md:flex items-center justify-between px-10 py-3 bg-[#1e5bff] text-white shadow-lg sticky top-0 z-50">
+        <div class="flex items-center">
+            <img src="logo-smekda.png" alt="Logo" class="h-14 w-auto object-contain">
+        </div>
+
+        <div class="flex gap-10 items-center font-semibold text-sm tracking-wide">
+            <a href="index.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Beranda</a>
+            <a href="about.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tentang</a>
+            
+            <div class="relative py-1 group">
+                <button id="btn-akademik" class="desktop-link flex items-center gap-1 hover:text-blue-100 transition">
+                    Akademik <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                </button>
+                <div id="menu-akademik" class="hidden group-hover:block absolute top-full left-0 mt-4 w-48 bg-white text-gray-800 rounded-md shadow-xl border border-gray-100 z-[60] overflow-hidden">
+                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition border-b border-gray-50">Kurikulum</a>
+                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition">Kesiswaan</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Kontak</a>
+        </div>
+
+        <a href="#" class="flex items-center gap-2 border-[1.5px] border-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-[#1e5bff] transition-all duration-300">
+            <i class="fa-solid fa-table-columns"></i> Dashboard
+        </a>
+    </nav>
+
+    <main id="Beranda" class="min-h-screen flex items-center justify-center p-6">
+        <div class="max-w-4xl w-full mx-auto bg-white p-10 rounded-2xl shadow-xl text-center">
+            <h1 class="text-4xl font-black mb-4 text-gray-800 uppercase">Selamat Datang</h1>
+            <p class="text-xl text-gray-600">Website Resmi SMKN 2 Purwakarta</p>
+            <div class="mt-6 h-1 w-20 bg-[#1e5bff] mx-auto rounded-full"></div>
+        </div>
+    </main>
+
+    <nav id="mobile-nav" class="md:hidden fixed bottom-0 left-0 right-0 bg-[#1e5bff] text-white shadow-[0_-5px_20px_rgba(0,0,0,0.1)] z-50 transition-transform duration-300">
+        <div class="flex justify-around items-center py-3">
+            <a href="index.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-house text-lg"></i>
+                <span class="text-[10px] font-medium">BERANDA</span>
+            </a>
+            <a href="about.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-circle-info text-lg"></i>
+                <span class="text-[10px] font-medium">TENTANG</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-book-open text-lg"></i>
+                <span class="text-[10px] font-medium">AKADEMIK</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
+                <i class="fa-solid fa-phone text-lg"></i>
+                <span class="text-[10px] font-medium">KONTAK</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
