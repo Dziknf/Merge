@@ -7,64 +7,242 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Beranda | Smekda</title>
 </head>
-<body class="bg-gray-50 pb-24 md:pb-0 font-sans">
+<body class="bg-[#f7fbfc] pb-24 md:pb-0 font-sans text-gray-700 overflow-x-hidden">
 
-    <nav class="hidden md:flex items-center justify-between px-10 py-3 bg-[#1e5bff] text-white shadow-lg sticky top-0 z-50">
+    <nav class="hidden md:flex items-center justify-between px-10 py-3 bg-[#769fcd] text-white shadow-lg sticky top-0 z-50">
         <div class="flex items-center">
             <img src="logo-smekda.png" alt="Logo" class="h-14 w-auto object-contain">
         </div>
 
-        <div class="flex gap-10 items-center font-semibold text-sm tracking-wide">
-            <a href="index.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Beranda</a>
-            <a href="about.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tentang</a>
+        <div class="flex gap-12 items-center font-semibold text-sm tracking-wide">
+            <a href="index.html" class="relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white transition-all">Beranda</a>
+            <a href="about.html" class="relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tentang</a>
             
             <div class="relative py-1 group">
-                <button id="btn-akademik" class="desktop-link flex items-center gap-1 hover:text-blue-100 transition">
+                <button id="btn-akademik" class="flex items-center gap-1 hover:text-[#d6e6f2] transition cursor-pointer">
                     Akademik <i class="fa-solid fa-chevron-down text-[10px]"></i>
                 </button>
-                <div id="menu-akademik" class="hidden group-hover:block absolute top-full left-0 mt-4 w-48 bg-white text-gray-800 rounded-md shadow-xl border border-gray-100 z-[60] overflow-hidden">
-                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition border-b border-gray-50">Kurikulum</a>
-                    <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-[#1e5bff] transition">Kesiswaan</a>
+                <div id="menu-akademik" class="hidden absolute top-full left-0 mt-4 w-56 bg-white text-gray-800 rounded-md shadow-xl border border-[#d6e6f2] z-[60] overflow-hidden">
+                    <div class="bg-[#f7fbfc] px-4 py-2 text-[10px] font-bold text-[#769fcd] uppercase border-b border-[#d6e6f2]">Pembelajaran</div>
+                    <a href="#" class="block px-4 py-3 hover:bg-[#d6e6f2] hover:text-[#769fcd] transition border-b border-gray-50 text-sm">Jurusan</a>
+                    <a href="#" class="block px-4 py-3 hover:bg-[#d6e6f2] hover:text-[#769fcd] transition border-b border-gray-50 text-sm">Kurikulum</a>
+                    <div class="bg-[#f7fbfc] px-4 py-2 text-[10px] font-bold text-[#769fcd] uppercase border-b border-[#d6e6f2]">Aktivitas</div>
+                    <a href="#" class="block px-4 py-3 hover:bg-[#d6e6f2] hover:text-[#769fcd] transition border-b border-gray-50 text-sm">Ekskul</a>
+                    <a href="#" class="block px-4 py-3 hover:bg-[#d6e6f2] hover:text-[#769fcd] transition text-sm">Berita</a>
                 </div>
             </div>
 
-            <a href="contact.html" class="desktop-link relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Kontak</a>
+            <a href="contact.html" class="relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Kontak</a>
         </div>
 
-        <a href="#" class="flex items-center gap-2 border-[1.5px] border-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-[#1e5bff] transition-all duration-300">
+        <a href="#" class="flex items-center gap-2 border-[1.5px] border-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-[#769fcd] transition-all">
             <i class="fa-solid fa-table-columns"></i> Dashboard
         </a>
     </nav>
 
-    <main id="Beranda" class="min-h-screen flex items-center justify-center p-6">
-        <div class="max-w-4xl w-full mx-auto bg-white p-10 rounded-2xl shadow-xl text-center">
-            <h1 class="text-4xl font-black mb-4 text-gray-800 uppercase">Selamat Datang</h1>
-            <p class="text-xl text-gray-600">Website Resmi SMKN 2 Purwakarta</p>
-            <div class="mt-6 h-1 w-20 bg-[#1e5bff] mx-auto rounded-full"></div>
-        </div>
-    </main>
+    <header class="relative bg-[#769fcd] overflow-hidden">
+        <div class="relative h-[500px] md:h-[650px] flex items-center justify-center">
+            <div id="carousel-container" class="absolute inset-0 w-full h-full">
+                <div class="carousel-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1523050853061-80e8a4ff147e?auto=format&fit=crop&w=1350&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                    <div class="relative z-10 text-white text-center px-10 max-w-5xl">
+                        <h2 class="text-4xl md:text-7xl font-black mb-6 uppercase tracking-tight drop-shadow-lg">SMKN 2 PURWAKARTA</h2>
+                        <p class="text-lg md:text-2xl font-light opacity-90 drop-shadow-md">Mencetak tenaga kerja profesional, berkarakter, dan siap bersaing di era digital.</p>
+                    </div>
+                </div>
+                <div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1350&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                    <div class="relative z-10 text-white text-center px-10 max-w-5xl">
+                        <h2 class="text-4xl md:text-7xl font-black mb-6 uppercase tracking-tight drop-shadow-lg">PENDIDIKAN VOKASI</h2>
+                        <p class="text-lg md:text-2xl font-light opacity-90 drop-shadow-md">Membentuk pribadi yang cerdas, inovatif, dan antusias dalam berkarya.</p>
+                    </div>
+                </div>
+            </div>
 
-    <nav id="mobile-nav" class="md:hidden fixed bottom-0 left-0 right-0 bg-[#1e5bff] text-white shadow-[0_-5px_20px_rgba(0,0,0,0.1)] z-50 transition-transform duration-300">
-        <div class="flex justify-around items-center py-3">
-            <a href="index.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
-                <i class="fa-solid fa-house text-lg"></i>
-                <span class="text-[10px] font-medium">BERANDA</span>
-            </a>
-            <a href="about.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
-                <i class="fa-solid fa-circle-info text-lg"></i>
-                <span class="text-[10px] font-medium">TENTANG</span>
-            </a>
-            <a href="#" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
-                <i class="fa-solid fa-book-open text-lg"></i>
-                <span class="text-[10px] font-medium">AKADEMIK</span>
-            </a>
-            <a href="contact.html" class="flex flex-col items-center gap-1 w-full opacity-70 hover:opacity-100 transition-all">
-                <i class="fa-solid fa-phone text-lg"></i>
-                <span class="text-[10px] font-medium">KONTAK</span>
-            </a>
+            <div class="absolute inset-0 flex items-center justify-between px-4 md:px-8 z-20 pointer-events-none">
+                <button id="prevSlide" class="pointer-events-auto w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/20 hover:bg-white/40 border border-white/30 text-white transition-all flex items-center justify-center backdrop-blur-sm">
+                    <i class="fa-solid fa-chevron-left text-xl"></i>
+                </button>
+                <button id="nextSlide" class="pointer-events-auto w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/20 hover:bg-white/40 border border-white/30 text-white transition-all flex items-center justify-center backdrop-blur-sm">
+                    <i class="fa-solid fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 -mt-16 relative z-30">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-6 rounded-2xl shadow-xl border-b-4 border-[#769fcd] text-center transform hover:-translate-y-2 transition-all">
+                    <i class="fa-solid fa-users text-3xl text-[#769fcd] mb-2"></i>
+                    <h3 class="text-2xl font-bold">1.700+</h3>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Siswa</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xl border-b-4 border-[#769fcd] text-center transform hover:-translate-y-2 transition-all">
+                    <i class="fa-solid fa-chalkboard-user text-3xl text-[#769fcd] mb-2"></i>
+                    <h3 class="text-2xl font-bold">60+</h3>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Guru</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xl border-b-4 border-[#769fcd] text-center transform hover:-translate-y-2 transition-all">
+                    <i class="fa-solid fa-graduation-cap text-3xl text-[#769fcd] mb-2"></i>
+                    <h3 class="text-2xl font-bold">6</h3>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Jurusan</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xl border-b-4 border-[#769fcd] text-center transform hover:-translate-y-2 transition-all">
+                    <i class="fa-solid fa-handshake text-3xl text-[#769fcd] mb-2"></i>
+                    <h3 class="text-2xl font-bold">50+</h3>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Mitra</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto overflow-hidden">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group justify-self-center">
+                <div class="absolute -inset-4 bg-[#d6e6f2] rounded-3xl -z-10 group-hover:rotate-3 transition-transform"></div>
+                <img src="#" alt="Kepsek" class="rounded-2xl shadow-2xl w-64 h-80 md:w-80 md:h-[450px] object-cover border-4 border-white">
+            </div>
+            <div class="text-center md:text-left">
+                <h4 class="text-[#769fcd] font-bold tracking-[0.3em] text-sm mb-2 uppercase">Sambutan</h4>
+                <h2 class="text-3xl font-black text-gray-800 mb-6 uppercase">Kepala Sekolah</h2>
+                <p class="text-gray-500 italic leading-relaxed mb-8">
+                    "Selamat datang di website resmi SMKN 2 Purwakarta. Kami berkomitmen untuk terus berinovasi dalam dunia pendidikan vokasi, menjembatani bakat siswa dengan kebutuhan dunia industri modern. Mari bersama-sama mencetak generasi unggul."
+                </p>
+                <div class="border-l-4 border-[#769fcd] pl-4 text-left">
+                    <h5 class="text-lg font-bold">Drs. Nama Kepala Sekolah</h5>
+                    <p class="text-xs text-[#769fcd] font-bold uppercase tracking-widest">NIP. ##############</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#769fcd] text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-black uppercase mb-12 tracking-tight text-center">Program Unggulan</h2>
+            
+            <div id="program-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-[#b9d7ea] text-gray-800 transform hover:-translate-y-1 transition-all">
+                    <div class="bg-[#f7fbfc] w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-inner text-[#769fcd]"><i class="fa-solid fa-trophy text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-3">Ekstrakurikuler</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Lebih dari 15 bidang pengembangan minat bakat mulai dari olahraga, seni, kewirausahaan, kesehatan, hingga teknologi digital.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-[#b9d7ea] text-gray-800 transform hover:-translate-y-1 transition-all">
+                    <div class="bg-[#f7fbfc] w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-inner text-[#769fcd]"><i class="fa-solid fa-industry text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-3">Teaching Factory</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Model pembelajaran berbasis produk yang bekerjasama langsung dengan perusahaan ternama.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-[#b9d7ea] text-gray-800 transform hover:-translate-y-1 transition-all">
+                    <div class="bg-[#f7fbfc] w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-inner text-[#769fcd]"><i class="fa-solid fa-briefcase text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-3">Bursa Kerja Khusus</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Penyaluran lulusan langsung ke dunia kerja melalui jaringan kerjasama industri nasional.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl font-black text-gray-800 uppercase tracking-tight">Fasilitas Sekolah</h2>
+            <div class="h-1 w-12 bg-[#769fcd] mx-auto rounded-full mt-4"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="relative group overflow-hidden rounded-2xl h-60 md:h-72 shadow-lg">
+                <img src="#" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-[#769fcd]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 p-4 text-center">
+                    <span class="text-white font-bold uppercase text-[10px] tracking-widest">Laboratorium Komputer</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-60 md:h-72 shadow-lg">
+                <img src="#" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-[#769fcd]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 p-4 text-center">
+                    <span class="text-white font-bold uppercase text-[10px] tracking-widest">Perpustakaan</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-60 md:h-72 shadow-lg">
+                <img src="#" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-[#769fcd]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 p-4 text-center">
+                    <span class="text-white font-bold uppercase text-[10px] tracking-widest">Lapangan sekolah</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-60 md:h-72 shadow-lg">
+                <img src="#" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-[#769fcd]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 p-4 text-center">
+                    <span class="text-white font-bold uppercase text-[10px] tracking-widest">Kantin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#f7fbfc]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-2xl font-black text-gray-800 uppercase tracking-tight">Berita Terkini</h2>
+                <a href="#" class="text-[#769fcd] font-bold text-xs hover:underline uppercase">Semua Berita <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg border border-[#d6e6f2] group hover:shadow-2xl transition-all">
+                    <img src="#" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 text-[9px] text-gray-400 font-bold uppercase mb-4 tracking-widest">
+                            <span><i class="fa-solid fa-calendar mr-1"></i> 08 Jan 2026</span>
+                            <span><i class="fa-solid fa-user mr-1"></i> Admin</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-[#769fcd] transition-colors leading-tight">Siswa SMKN 2 Purwakarta Juara 1 LKS Tingkat Provinsi</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2">Keberhasilan ini membuktikan kualitas pendidikan vokasi kita mampu bersaing di level tertinggi...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#769fcd] text-white pt-20 pb-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 border-b border-white/10 pb-12 mb-8">
+            <div class="text-center md:text-left">
+                <img src="logo-smekda.png" class="h-16 mx-auto md:mx-0 mb-6">
+                <h4 class="font-black text-lg uppercase tracking-tight">SMKN 2 Purwakarta</h4>
+                <p class="text-xs text-[#d6e6f2] mt-4 leading-relaxed tracking-wide">Jl. Jend. Ahmad Yani No.98, Nagri Tengah, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41114</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase text-sm tracking-widest text-[#d6e6f2]">Layanan</h5>
+                <ul class="space-y-3 text-xs font-semibold">
+                    <li><a href="#" class="hover:translate-x-2 transition-transform block">PPDB 2026</a></li>
+                    <li><a href="#" class="hover:translate-x-2 transition-transform block">Bursa Kerja (BKK)</a></li>
+                    <li><a href="#" class="hover:translate-x-2 transition-transform block">Hubungan Industri</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase text-sm tracking-widest text-[#d6e6f2]">Menu Utama</h5>
+                <ul class="space-y-3 text-xs font-semibold">
+                    <li><a href="index.html" class="hover:text-[#d6e6f2]">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-[#d6e6f2]">Tentang Kami</a></li>
+                    <li><a href="contact.html" class="hover:text-[#d6e6f2]">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div class="text-center md:text-left">
+                <h5 class="font-bold mb-6 uppercase text-sm tracking-widest text-[#d6e6f2]">Ikuti Kami</h5>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-white transition-all hover:text-[#769fcd] shadow-lg"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-white transition-all hover:text-[#769fcd] shadow-lg"><i class="fa-brands fa-youtube text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[9px] text-[#d6e6f2] font-bold tracking-[0.2em] uppercase opacity-70">
+            &copy; 2026 SMK Negeri 2 Purwakarta | All Rights Reserved
+        </div>
+    </footer>
+
+    <nav id="mobile-nav" class="md:hidden fixed bottom-0 left-0 right-0 bg-[#769fcd] text-white shadow-[0_-5px_20px_rgba(0,0,0,0.1)] z-50">
+        <div class="flex justify-around items-center py-4">
+            <a href="index.html" class="flex flex-col items-center gap-1 opacity-100"><i class="fa-solid fa-house"></i><span class="text-[8px] font-bold">BERANDA</span></a>
+            <a href="about.html" class="flex flex-col items-center gap-1 opacity-60"><i class="fa-solid fa-circle-info"></i><span class="text-[8px] font-bold">TENTANG</span></a>
+            <a href="#" class="flex flex-col items-center gap-1 opacity-60"><i class="fa-solid fa-graduation-cap"></i><span class="text-[8px] font-bold">AKADEMIK</span></a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 opacity-60"><i class="fa-solid fa-phone"></i><span class="text-[8px] font-bold">KONTAK</span></a>
         </div>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="test1.js"></script>
 </body>
 </html>
